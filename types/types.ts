@@ -1,3 +1,5 @@
+import { UserRole } from "@prisma/client";
+
 export type CategoryProps = {
   title: string;
   slug: string;
@@ -12,6 +14,7 @@ export type UserProps = {
   image: string;
   email: string;
   password: string;
+  role?: UserRole;
 };
 export type LoginProps = {
   email: string;

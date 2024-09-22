@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { UploadButton } from "@/lib/uploadthing";
-// import { UploadButton } from "@/lib/uploadthing";
 import Image from "next/image";
 import React from "react";
 type ImageInputProps = {
@@ -24,7 +23,7 @@ export default function ImageInput({
         <div className="grid gap-2">
           <Image
             alt={title}
-            className="h-40 w-full rounded-md object-cover"
+            className="h-40 w-full rounded-md object-contain"
             height="300"
             src={imageUrl}
             width="300"
@@ -34,7 +33,7 @@ export default function ImageInput({
             endpoint={endpoint}
             onClientUploadComplete={(res) => {
               // Do something with the response
-              console.log("Files: ", res);
+              // console.log("Files: ", res);
 
               setImageUrl(res[0].url);
             }}

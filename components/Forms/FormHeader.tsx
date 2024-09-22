@@ -43,14 +43,14 @@ export default function FormHeader({
           {editingId ? "Update" : "Create"} {title}
         </h1>
       </div>
-      <div className="flex items-center justify-center gap-2">
+      {/* <div className="flex items-center justify-center gap-2">
         <CloseButton href={href} parent={parent} />
         <SubmitButton
           size={"sm"}
           title={editingId ? `Update ${title}` : `Save ${title}`}
           loading={loading}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

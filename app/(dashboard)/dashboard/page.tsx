@@ -1,24 +1,19 @@
-import { Button } from "@/components/ui/button";
+import OverviewCard from "@/components/dashboard/OverView/OverviewCard";
+import RecentClients from "@/components/dashboard/OverView/RecentClients";
+import RecentCustomers from "@/components/dashboard/OverView/RecentProjects";
 
 export default function Dashboard() {
   return (
-    <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-      <div className="flex items-center">
-        <h1 className="text-lg font-semibold md:text-2xl">Inventory</h1>
+    <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
+      <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+        <OverviewCard />
+        <OverviewCard />
+        <OverviewCard />
+        <OverviewCard />
       </div>
-      <div
-        className="flex flex-1 items-center justify-center rounded-lg border border-dashed shadow-sm"
-        x-chunk="dashboard-02-chunk-1"
-      >
-        <div className="flex flex-col items-center gap-1 text-center">
-          <h3 className="text-2xl font-bold tracking-tight">
-            You have no products
-          </h3>
-          <p className="text-sm text-muted-foreground">
-            You can start selling as soon as you add a product.
-          </p>
-          <Button className="mt-4">Add Product</Button>
-        </div>
+      <div className="grid gap-4 md:gap-8 lg:grid-cols-2 ">
+        <RecentCustomers />
+        <RecentClients />
       </div>
     </main>
   );

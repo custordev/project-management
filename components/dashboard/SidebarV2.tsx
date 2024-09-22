@@ -176,7 +176,7 @@ export default function SidebarV2() {
   return (
     <div className="hidden border-r bg-muted/40 md:block">
       <div className="flex h-full max-h-screen flex-col gap-2">
-        <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6 mt-6">
+        <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6 ">
           <Logo href="/dashboard" title="Next Starter Kit" />
           <Button variant="outline" size="icon" className="ml-auto h-8 w-8">
             <Bell className="h-4 w-4" />
@@ -184,7 +184,7 @@ export default function SidebarV2() {
           </Button>
         </div>
         <div className="flex-1">
-          <ScrollArea className="h-[445px] w-full rounded-md px-4 py-2">
+          <ScrollArea className="h-[80vh] w-full rounded-md px-4 py-2">
             <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
               {sidebarLinks.map((item, i) => {
                 return (

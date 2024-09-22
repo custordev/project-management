@@ -7,7 +7,6 @@ import { UserProps } from "@/types/types";
 
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
-// import { createUser } from "@/actions/users";
 import TextInput from "../FormInputs/TextInput";
 import PasswordInput from "../FormInputs/PasswordInput";
 import SubmitButton from "../FormInputs/SubmitButton";
